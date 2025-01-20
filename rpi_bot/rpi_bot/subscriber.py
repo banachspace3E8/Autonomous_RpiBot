@@ -9,7 +9,7 @@ from std_msgs.msg import Int16
 
 class SubscriberNode(Node):
     def __init__(self):
-        super().__init__('simple_subscriber')
+        super().__init__('simple_rpi_subscriber')
         self.subscriber_ = self.create_subscription(Int16, 'pub_topic', self.listener_callback, 10)
         self.subscriber_
         self.device = self.detect_device()
