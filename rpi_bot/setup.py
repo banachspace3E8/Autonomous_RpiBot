@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'publisher_rpi_node = rpi_bot.publisher:main',
             'subscriber_rpi_node = rpi_bot.subscriber:main',
+            'cmdVel_to_pwm_node = rpi_bot.cmd2pwm_driver:main',
         ],
     },
 )
